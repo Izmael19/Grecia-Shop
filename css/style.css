@@ -4,7 +4,9 @@
     margin: 0;
     padding: 0;
 }
+/* Part 1, about me */
 .Container1{
+    transition: 0.5s ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,8 +15,9 @@
     background-position: 100% -40vh  ;
     background-repeat: no-repeat;
     height:70vh;
+    cursor: default;
 }
-.card{
+.card1{
     padding: 5vw;
     display: flex;
     justify-content: space-between;
@@ -35,3 +38,12 @@
     width: 300px;
     padding: 2px 5px;
 }
+.boy>img{
+    width: 300px;
+}
+.Container1:hover{
+    transition: 0.5s ;
+    transform: scale(1.1);
+    box-shadow: 0 0 100px;
+}
+/* Part 2 */
