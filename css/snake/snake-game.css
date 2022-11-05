@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+* {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.snake-field {
+    border-radius: 14px;
+    background: #2b2b2b;
+    box-shadow:  41px 41px 82px #111111,
+                 -41px -41px 82px #454545;
+    width: 90vw;
+    height: 90vh;
+}
+.snake{
+    background: none;
+    color: #fff;
+}

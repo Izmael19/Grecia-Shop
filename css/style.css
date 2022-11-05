@@ -51,7 +51,11 @@
     transition-duration: 400ms;
     transition-property: color;
 }
-
+.more>a{
+    background: none;
+    color: #fff;
+    text-decoration: none;
+}
 .more:focus,
 .more:hover {
     color: #fff;
@@ -126,7 +130,8 @@
     transform: scale(1.3);
 }
 .hello-im{
-    color: #40bdef;
+    margin: 1vh;
+    color: #2152bd;
 }
 .card1:hover>.name {
     transition: 0.5s;
@@ -136,15 +141,18 @@
 .about-1 {
     transition: 0.5s;
     font-size: large;
-    white-space: initial;
     width: 600px;
     padding: 2px 5px;
+}
+.about-1>p{
+    margin: 1vh;
 }
 
 .card1:hover>.about-1 {
     transition: 0.5s;
     transform: scale(1.05);
 }
+/* cards of projects */
 .container2{
     display: flex;
     flex-direction: row;
@@ -170,6 +178,7 @@
     height: 100px;
 }
 .cards:hover{
+    transform: translateY(-1vh);
     transition: 1s;
     background-color: #143375;
 }
