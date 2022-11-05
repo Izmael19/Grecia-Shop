@@ -4,26 +4,58 @@
     font-family: 'Oswald', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #111111;
+    background-color: #121212;
 }
-
-.container {
+.name{
     display: flex;
     justify-content: center;
+    color: #e2e2e2;
+    text-shadow: 0px 0px 20px #d8d8d8;
+    font-size: 3.5em;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
 }
 
 .snake-field {
-    border-radius: 14px;
+    border-radius: 30px;
     background: #2b2b2b;
-    box-shadow:  41px 41px 82px #111111,
-                 -41px -41px 82px #454545;
-    width: 90vw;
-    height: 90vh;
+    box-shadow: inset 30px 30px 100px #303030,
+        inset -30px -30px 100px #3b3b3b;
+    width: 70vw;
+    height: 80vh;
 }
-.snake{
+
+.snake {
     background: none;
     color: #fff;
+}
+
+.score {
+    padding: 4vh 4vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 12vw;
+    height: 72vh;
+    color: #e1e1e1;
+    border-radius: 30px;
+    background: #0064c2;
+    box-shadow: inset 14px 14px 28px #00284e,
+                inset -14px -14px 28px #00a0ff;
+}
+
+.points {
+        text-shadow: 0px 0px 20px #d8d8d8;
+    background: none;
+}
+
+.points-number {
+    text-shadow: 0px 0px 20px #d8d8d8;
+    font-size: 4em;
+    background: none;
 }
