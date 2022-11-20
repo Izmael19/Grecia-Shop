@@ -1,6 +1,5 @@
 let equal = document.getElementById("equal")
-let reset = document.getElementById("reset")
-var number = ""
+let rest = document.getElementById("reset")
 
 function numbers(value) {
     document.getElementById("resultado").value += value;
@@ -19,12 +18,15 @@ function reset() {
     document.getElementById("resultado").value = "";
 }
 
-const btns = document.querySelectorAll('button[id^=button]')
+const btns = document.querySelectorAll('button[id^=b]')
 
 btns.forEach(btn => {
 
-   btn.addEventListener('click', event => {
-        alert( event.target.textContent );
-   });
+    btn.addEventListener('click', event => {
+        numbers(event.target.textContent);
+    });
 
 });
+
+equal.addEventListener("click", () => operation())
+rest.addEventListener("click", () => reset())
